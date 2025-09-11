@@ -34,3 +34,4 @@ int main() {
 
     return 0;
 }
+// output Array after 3 left rotations: 4 5 1 2 3 
