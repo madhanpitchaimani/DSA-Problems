@@ -8,7 +8,7 @@ int main() {
       int result=0;
        
        for(int i=0;i<n;i++){
-           result=result^nums[i];//xor a ^ a = 0 (same numbers                              cancel out)a^0=a
+           result=result^nums[i];//xor a ^ a = 0 (same numbers)                              cancel out)a^0=a
        }
            cout<<result;
        

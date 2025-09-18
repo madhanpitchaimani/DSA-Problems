@@ -1,5 +1,3 @@
-
-	
 //Find the highest/lowest frequency element
 //using hash map
 
