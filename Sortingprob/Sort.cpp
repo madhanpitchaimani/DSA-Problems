@@ -66,3 +66,36 @@ int main() {
 
     return 0;
 }
+
+//bool type check sorted or not
+
+#include <iostream>
+#include<vector>
+using namespace std;
+
+bool Sortedarray(vector<int> &arr,int n){
+    
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            if(arr[i]<arr[j]) return false;
+        }
+    }
+    return true;
+}
+
+int main(){
+  int n;
+  cout<<"Enter the size of array :" << " ";
+  cin>>n;
+  
+  cout<<"Enter the Array"<<endl;
+   vector<int> arr(n);
+  for(int i=0;i<n;i++){
+      cin>>arr[i];
+  }
+  
+  cout<<(Sortedarray(arr,n)? "Sorted":"Not Sorted" );
+      
+
+    return 0;
+}

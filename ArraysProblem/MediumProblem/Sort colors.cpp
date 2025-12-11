@@ -14,9 +14,12 @@ void sortColors(vector<int>& nums) {
 
     // Step 2: Overwrite nums
     int i = 0;
-    while (count0--) nums[i++] = 0;  // put all 0s
-    while (count1--) nums[i++] = 1;  // put all 1s
-    while (count2--) nums[i++] = 2;  // put all 2s
+    while (count0--)
+      nums[i++] = 0;  // put all 0s
+    while (count1--) 
+       nums[i++] = 1;  // put all 1s
+    while (count2--) 
+      nums[i++] = 2;  // put all 2s
 }
 
 int main() {

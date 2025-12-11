@@ -1,0 +1,34 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+void minmax(vector<int> &arr,int n){
+    int min = arr[0];
+    int max=arr[0];
+    for(int i=1;i<n;i++){
+        if(arr[i]<min){
+             min=arr[i];
+        }
+        if(arr[i]>max){
+            max=arr[i];
+        }
+    }
+    
+    cout<<"Max value"<<" "<<max<<endl;
+    cout<<"Min value"<<" "<<min<<endl;
+}
+
+int main(){
+    int n;
+    cout<<"Enter the size of array"<<endl;;
+    cin>>n;
+    
+    cout<<"Enter the array"<<endl;
+    vector<int> arr(n);
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    
+    minmax(arr,n);
+    
+}
